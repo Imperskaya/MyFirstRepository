@@ -3,5 +3,22 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Imperskaya/FirstRepositorySokolova.git
+git remote add origin https://github.com/Imperskaya/MyFirstRepositorySokolova.git
 git push -u origin main
+#include <iostream>
+ 
+int main(int argc, char* argv[])
+{
+    // Если бы передан дополнительный аргумент,
+    if (argc > 1)
+    {
+        // то попытаемся вывести полученный аргумент 
+        std::cout << argv[1]<<endl;
+    } 
+    else
+    {
+        // В противном случае сообщаем, что аргументы не передавались
+        cout << "Without arguments" << endl;
+    }
+    return 0;
+}
